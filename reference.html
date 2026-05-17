@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REFERENCES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <h1>REFERENCES</h1>
+    <p>A SUMMARY OF CSS RULES THAT ARE NOT COVERED IN CLASS</p>
+
+    <hr>
+
+    <h2>1. VIDEO TAG</h2>
+    <p>SOURCE: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video">MDN video</a></p>
+    <p>RULES: embed a video attributes like autoplay, loop, muted, and playsinline to control how the video plays</p>
+    <p>MY IMPLEMENTATION: Used as a full-screen background video</p>
+    <video autoplay loop muted playsinline width="300">
+        <source src="./videos/ABUKU_PV.mp4" type="video/mp4">
+    </video>
+
+    <hr>
+
+    <h2>2. EXTERNAL LINK</h2>
+    <p>SOURCE: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/link">MDN link</a></p>
+    <p>RULES: links external resources like stylesheets to the document</p>
+    <p>MY IMPLEMENTATION: Imported Google Fonts (Noto Serif JP) and Font Awesome icons</p>
+    <p>EXAMPLE ICON I USED: <i class="fa-brands fa-youtube"></i></p>
+
+    <hr>
+
+    <h2>3. :ROOT CSS PSEUDOCLASS</h2>
+    <p>SOURCE: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root">MDN :root</a></p>
+    <p>RULES: represents as the top-level element that can be used to store global CSS variables</p>
+    <p>MY IMPLEMENTATION: unified variables for color modification across the site (i used it to declare the main theme of the site --main --white etc.)</p>
+    <pre>
+        :root {
+            --primary-accent: #ff7f50;
+        }
+    </pre>
+
+    <hr>
+
+    <h2>4. CLIP PATH</h2>
+    <p>SOURCE: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/clip-path">MDN clip-path</a></p>
+    <p>RULES: creates a clipping shape to hide parts of an element like the shape of octogon</p>
+    <p>MY IMPLEMENTATION: used to cut the corners of the team member name plate as stylized hexagon shape as seen in the team member section</p>
+    <pre>
+        clip-path: polygon(
+            0% 2rem,
+            2rem 0%,
+            100% 0,
+            100% calc(100% - 2rem) ,
+            calc(100% - 2rem) 100%,
+            0% 100%
+        );
+    </pre>
+
+    <hr>
+
+    <h2>5. BACKDROP FILTER</h2>
+    <p>SOURCE: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter">MDN backdrop-filter</a></p>
+    <p>RULES: applies graphical effects (like blur) to the area behind an element</p>
+    <p>MY IMPLEMENTATION: used to created a glass-like blur effect on the team member name plate over the background video</p>
+    <pre>
+        backdrop-filter: blur(12px);
+    </pre>
+
+    <hr>
+
+    <h2>6. HOVER CURSOR</h2>
+    <p>SOURCE: Changes the mouse pointer when interacting with an element</p>
+    <p>MY IMPLEMENTATION: made footer navigation arrow shows a pointer hand when hovered over (originally it was just a div box with no pointer when hovered)</p>
+    <pre>
+        cursor: pointer;
+    </pre>
+
+</body>
+</html>

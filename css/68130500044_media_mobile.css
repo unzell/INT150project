@@ -1,0 +1,286 @@
+@media only screen and (max-width: 700px) {
+    /* /========== GLOBAL ===========/ */
+
+    .section_title {
+        font-size: 1.5rem;
+    }
+
+   /* /====================================/ */
+
+
+
+
+    /* /========== FRONT SECTION ===========/ */
+
+    .visit_button {
+        width: 80%;
+    }
+
+    .visit_button > a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .visit_button > a > p {
+        font-size: 150%;
+        text-align: center;
+    }
+
+
+    .SNS_tab {
+        width: 70%;
+        height: 10rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .SNS_button {
+        width: 20%;
+        height: 50%;
+    }
+
+
+    .SNS_button > a {
+        font-size: 60%;
+    }
+
+    .icon_tab {
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        height: 20rem;
+    }
+
+    .icon_button {
+        width: 50%;
+        height: 30%;
+    }
+
+   /* /====================================/ */
+
+
+
+
+    /* /========== TEAM SECTION ===========/ */
+
+    .team_role { 
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .team_member {
+        width: 40%;
+        height: 8rem;
+    }
+
+    .team_member_inner > span+span {
+        text-align: center;
+    }
+
+    .team_member_name {
+        font-weight: normal;
+    }
+
+    .team_member_role {
+        display: none;
+    }
+
+    .short, .medium {
+        font-size: 1.5rem;
+    }
+
+    .long {
+        font-size: 1rem;
+    }
+
+    .extra_long {
+        font-size: 0.6rem;
+    }
+
+    /* /====================================/ */
+
+
+
+
+    /* /========== FOOTER SECTION ===========/ */
+
+
+    .footer_section {
+        height: 100%;
+    }
+
+    .releases_container {
+    flex-direction: column;
+    height: auto;
+    margin-top: 10rem ;
+    }
+
+    
+    /* /-----BAR TRACK------/ */
+
+    .bar_track {
+        width: 100%;
+        height: 10%;
+        flex-direction: row;
+    }
+
+    .selected {
+        margin: 0 3%;
+        text-decoration: none;
+    }
+
+    .bar_track li:not(.selected) {
+        display: none;
+    }
+
+    .selected::after, .selected::before {
+        display: none;
+    }
+
+    .arrow_button {
+        transform: rotate(-90deg);
+    }
+
+    .down {
+        transform: rotate(90deg);
+    }
+
+    /* /----------------------------------/ */
+
+
+
+    /* /-----ALBUM CONTAINER------/ */
+
+    .album_container {
+        height: 90%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .album_frame {
+        width: 100%;
+        height: auto;
+    }
+
+    .album_detail {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: var(--white);
+    }
+
+    .album_detail > img {
+        max-width: 15rem;
+    }
+
+    .album_detail > p {
+        width: 100%;
+    }
+
+    .album_detail {
+        color: var(--white)
+    }
+
+    .album_detail_date {
+        text-align: left;
+    }
+
+    .album_detail_title {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .album_detail_description, .album_detail_description a {
+        padding: 1rem;
+        white-space: pre-line;
+        overflow-wrap: break-word;
+        word-break: break-all;
+    }
+    /* /----------------------------------/ */
+
+
+
+
+    /* /-----FOOTER IMAGE SECTION------/ */
+    .footer_image_section h1 {
+        font-size: 1.5rem;
+    }
+    /* /----------------------------------/ */
+
+
+
+
+    /* /-----FOOTER------/ */
+
+
+
+    footer {
+        height: 70rem;
+    }
+
+    .footer {
+        height: 70%;
+        width: 100%;
+        color: var(--white);
+    }
+
+    .to_top_page_button .arrow_button {
+        transform: rotate(0);
+    }
+
+    .footer_SNS_tab {
+        width: 100%;
+        height: calc(100% - 5rem);
+    }
+
+    .three_SNS_tab {
+        height: 100%;
+
+    }
+
+    .two_SNS_tab {
+        height: 50%;
+    }
+
+    .footer_footer {
+        height: 30%;
+
+    }
+
+    .footer_footer_container {
+        flex-direction: column;
+        justify-content: center;       
+    }
+
+    .text_part {
+        width: 30rem;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text_part a {
+        text-align: center;
+    }
+
+    .text_part span {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        justify-content: center;
+    }
+
+    
+    .text_part p {
+        text-align: center;
+    }
+
+    /* /====================================/ */
+
+
+}

@@ -1,0 +1,151 @@
+:root {
+ --red: #B71B1B; /*thunderbird*/
+ --darkerRed: #8C1414; /*Tamarillo*/
+ --white: #fff;
+ --main: #000;
+ --main_hover: #3f3f3f;
+ --main_active: #272727;
+ --second_section_text_color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Noto Serif JP", 'Courier New';
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 1.6rem;
+}
+
+/* Since the default root element font size in most browsers is 16px, using html { font-size: 62.5%; } 
+makes the root element font size 10px, so everywhere else 1rem translates to 10px.
+If I want something to be 175px, I'd use 17.5rem to size it and get the advantage of relative units, 
+which helps a lot with responsive design. */
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* /========== CENTRALIZER ===========/ */
+
+.section, .section > .sub_section, .title_box, 
+.visit_button > a , .SNS_button, .icon_button,
+.team_container > ul, .team_role, .section_frame,
+.team_member_inner, .bar_track, .track_button , 
+.releases_container, .album_container, .album_frame,
+.album_detail, .footer_section, .footer_image_section,
+.to_top_page_button > a, .three_SNS_tab ul, .two_SNS_tab,
+.two_SNS_tab > div, .two_SNS_tab i, .footer_footer, 
+.footer_SNS_tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* /=================================/ */
+
+
+
+
+/* /======MAIN's  HOVER / ACTIVE=======/ */
+.visit_button > a:hover, .SNS_button:hover {
+    background-color: var(--main_hover);
+}
+
+.visit_button > a:active, .SNS_button:active{
+    background-color: var(--main_active);
+}
+/* /=================================/ */
+
+
+
+
+.section {
+    width: 100%;
+    height: 150vh;
+}
+
+
+.section > .sub_section {
+    width: 120rem;
+    height: 95%;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.section_frame {
+    height: 10rem;
+    width: 90%;
+    max-width: 110rem;
+    position: absolute;
+    top: -3.5rem;
+    padding: 1rem;
+    border: 1rem outset rgba(201, 177, 154, 0.555);
+    transform: rotate(-3deg) skew(-3deg, 0deg);
+    clip-path: polygon(
+        5rem 0%, 
+        100% 0%,
+        calc(100% - 5rem) 100%,
+        0% 100%
+    );
+
+    background: linear-gradient(
+        135deg,
+        rgba(45, 30, 20, 0.2) 0%,
+        rgba(20, 15, 10, 0.4) 100%
+    );
+
+    
+    backdrop-filter: blur(0.8rem) saturate(130%);
+    z-index: 100;
+}
+
+.section_title {
+    height: 100%;
+    width: 100%;
+
+    
+    background: linear-gradient(
+        135deg,
+        rgba(45, 30, 20, 0.2) 0%,
+        rgba(20, 15, 10, 0.4) 100%
+    );
+    
+    backdrop-filter: blur(0.3rem) saturate(130%);
+
+    color: var(--second_section_text_color);
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    
+    font-size: 4rem;
+    clip-path: inherit;
+}
+
+
+/* /==================================/ */
+
+
+
+

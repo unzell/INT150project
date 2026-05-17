@@ -1,0 +1,21 @@
+/* /-----FOOTER IMAGE SECTION------/ */
+
+.footer_image_section {
+    flex-direction: column;
+}
+
+.footer_image_section > h1 {
+    white-space: pre-line;
+    color: var(--white);
+    max-width: 90rem;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.footer_image {
+    width: 80%;
+    max-width: 90rem;
+}
+
+/* /----------------------------------/ */

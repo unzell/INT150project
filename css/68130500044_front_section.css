@@ -1,0 +1,88 @@
+/* /========== FRONT SECTION ===========/ */
+.front_section {
+    height: 150rem;
+}
+
+.title_box {
+    max-width: 50rem;
+    height: 40rem;
+    overflow: hidden;
+    position: absolute;
+    top: 20rem;
+}
+
+.title {
+    width: 100%;
+    /* background-color: rgba(34, 20, 10, 0.658) */
+}
+
+.visit_button {
+    width: 100%;
+    max-width: 50rem;
+    height: 10rem;
+    position: absolute;
+    top: 70rem;
+}
+
+.visit_button > a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--main);
+    border-radius: 10rem;
+}
+
+.visit_button > a > p {
+    font-size: 3.7rem;
+}
+
+.SNS_tab {
+    width: 12.5rem;
+    height: 40rem; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SNS_button {
+    width: 9.7rem;
+    height: 9.7rem;
+    background-color: var(--main);
+    font-size: 5rem;
+}
+
+.SNS_button > a {
+    color: var(--white);
+}
+
+.icon_tab {
+    width: 25rem; 
+    height: 12.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon_button {
+    width: 9.7rem;
+    height: 9.7rem;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.ump_icon {
+    width: 150%;
+}
+
+.yorushika_icon {
+    width: 80%;
+}
+
+/* /=================================/ */
